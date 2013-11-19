@@ -15,8 +15,8 @@ module FFI::Packets
       dsl_layout do
         field :hrd, :uint16, :desc => 'format of hardware address'
         field :pro, :uint16, :desc => 'format of protocol address'
-        field :hln, :uint16, :desc => 'length of hw address (ETH_ADDR_LEN)'
-        field :pln, :uint16, :desc => 'length of proto address (IP_ADDR_LEN)'
+        field :hln, :uint8,  :desc => 'length of hw address (ETH_ADDR_LEN)'
+        field :pln, :uint8, :desc => 'length of proto address (IP_ADDR_LEN)'
         field :op,  :uint16, :desc => 'operation'
       end
 
